@@ -1,9 +1,15 @@
 import React from "react";
-import '../styles/global.scss';
+import '../styles/global.css';
+import { Login } from '../containers/Login'
+import { Layout } from '../containers/Layout'
 
 
 const App = () => {
-  return <h1>Mi nombre es Ivan!</h1>;
+  return (
+    <Layout>
+      <Login/>
+    </Layout>
+  )
 };
 
 export { App };
