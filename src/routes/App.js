@@ -12,6 +12,12 @@ import { Layout } from "../containers/Layout";
 import { RecoveryPassword } from "../containers/RecoveryPassword";
 import { Home } from "../pages/Home";
 import { NotFound } from "../pages/NotFound";
+import { SendEmail } from "../pages/SendEmail";
+import { NewPassword } from "../pages/NewPassword";
+import { MyAccount } from "../pages/MyAccount";
+import { CreateAccount } from "../pages/CreateAccount";
+import { Checkout } from "../pages/Checkout";
+import { Orders } from "../pages/Orders";
 
 const App = () => {
   return (
