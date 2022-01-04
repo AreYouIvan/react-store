@@ -7,7 +7,7 @@ import "../globalStyles/global.css";
 // Components
 
 // Pages
-import { Login } from "../containers/Login";
+import { Login } from "../pages/Login";
 import { Layout } from "../containers/Layout";
 import { RecoveryPassword } from "../containers/RecoveryPassword";
 import { Home } from "../pages/Home";
