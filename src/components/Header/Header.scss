@@ -6,10 +6,10 @@ nav {
   padding: 0 24px;
   border-bottom: 1px solid var(--very-light-pink);
 }
-.menu {
+.nav-menu {
   display: none;
 }
-.logo {
+.nav-logo {
   width: 100px;
 }
 .navbar-left ul,
@@ -63,7 +63,7 @@ nav {
   align-items: center;
 }
 @media (max-width: 640px) {
-  .menu {
+  .nav-menu {
     display: block;
   }
   .navbar-left ul {

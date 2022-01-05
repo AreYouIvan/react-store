@@ -1,13 +1,13 @@
 import React from "react";
 import { Header } from "../../components/Header";
-import { ShoppingCartItem } from "../../components/ShoppingCartItem";
+import { ProductItem } from "../../components/ProductItem";
 
 const Home = () => {
   return (
     <>
       <Header />
-      <ShoppingCartItem></ShoppingCartItem>
-    </>
+      <ProductItem />
+    </> 
   );
 };
 

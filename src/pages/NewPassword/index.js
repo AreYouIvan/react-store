@@ -1,9 +1,12 @@
 import React from "react";
 import "./NewPassword.scss";
 
+import { Header } from '../../components/Header'
+
 const NewPassword = () => {
   return (
     <>
+      <Header/>
       <div className="login">
         <div className="form-container">
           <img src="./logos/logo_yard_sale.svg" alt="logo" className="logo" />

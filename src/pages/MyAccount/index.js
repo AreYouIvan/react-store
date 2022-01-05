@@ -1,7 +1,10 @@
 import React from "react";
+import { Header } from "../../components/Header";
 
 const MyAccount = () => {
   return (
+    <>
+    <Header/>
     <div className="login">
       <div className="form-container">
         <h1 className="title">My account</h1>
@@ -32,6 +35,8 @@ const MyAccount = () => {
         </form>
       </div>
     </div>
+
+    </>
   );
 };
 
