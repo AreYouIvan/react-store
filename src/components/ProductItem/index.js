@@ -4,7 +4,7 @@ import { AppContext } from "../../context/AppContext";
 
 import iconAddToCart from '@icons/bt_add_to_cart.svg';
 
-const ProductItem = ({product}) => {
+const ProductItem = ({ product }) => {
   const { addToCart } = useContext(AppContext);
 
   const handleCart = (item) => {
