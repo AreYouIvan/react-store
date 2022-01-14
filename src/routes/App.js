@@ -29,29 +29,29 @@ const App = () => {
       <BrowserRouter>
         <Layout>
           <Routes>
-            <Route exact path="/react-store/" element={<Home />} />
-            <Route exact path="/react-store/login" element={<Login />} />
+            <Route exact path="/" element={<Home />} />
+            <Route exact path="/login" element={<Login />} />
             <Route
               exact
-              path="/react-store/send-email"
+              path="/send-email"
               element={<SendEmail />}
             />
             <Route
               exact
-              path="/react-store/new-password"
+              path="/new-password"
               element={<NewPassword />}
             />
-            <Route exact path="/react-store/account" element={<MyAccount />} />
+            <Route exact path="/account" element={<MyAccount />} />
             <Route
               exact
-              path="/react-store/signup"
+              path="/signup"
               element={<CreateAccount />}
             />
-            <Route exact path="/react-store/checkout" element={<Checkout />} />
-            <Route exact path="/react-store/orders" element={<Orders />} />
+            <Route exact path="/checkout" element={<Checkout />} />
+            <Route exact path="/orders" element={<Orders />} />
             <Route
               exact
-              path="/react-store/recovery-password"
+              path="/recovery-password"
               element={<RecoveryPassword />}
             />
             <Route path="*" element={<NotFound />} />
