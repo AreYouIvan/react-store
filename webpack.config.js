@@ -10,18 +10,18 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "bundle.js",
-    publicPath: './'
+    publicPath: "/",
   },
   mode: "development",
   resolve: {
     extensions: [".js", ".jsx"],
     alias: {
-      '@components': path.resolve(__dirname, 'src/components'),
-      '@containers': path.resolve(__dirname, 'src/containers'),
+      "@components": path.resolve(__dirname, "src/components"),
+      "@containers": path.resolve(__dirname, "src/containers"),
       // '@styles': path.resolve(__dirname, 'src/styles'),
-      '@icons': path.resolve(__dirname, 'src/assets/icons'),
-      '@logos': path.resolve(__dirname, 'src/assets/logos'),
-    }
+      "@icons": path.resolve(__dirname, "src/assets/icons"),
+      "@logos": path.resolve(__dirname, "src/assets/logos"),
+    },
   },
   module: {
     rules: [
@@ -38,11 +38,11 @@ module.exports = {
         test: /\.(css|scss)$/,
         use: ["style-loader", "css-loader", "sass-loader"],
       },
-      // Images config 
+      // Images config
       {
         test: /\.(png|svg|jpg|gif)$/,
-        type: 'asset',
-      }
+        type: "asset",
+      },
     ],
   },
   plugins: [
@@ -55,7 +55,7 @@ module.exports = {
     }),
   ],
   devServer: {
-    allowedHosts: path.join(__dirname, "dist"),
+    allowedHosts: path.join(__dirname, "./dist"),
     compress: true,
     port: 3001,
     historyApiFallback: true,
