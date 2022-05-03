@@ -1,6 +1,6 @@
-@use '../../globalStyles/vars';
+@use '../../styles/vars';
 
-nav {
+.Nav {
   top: 0;
   position: fixed;
   width: calc(100% - 48px);

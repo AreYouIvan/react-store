@@ -1,11 +1,11 @@
 import React from "react";
-import "./Menu.scss";
+import styles from "./Menu.module.scss";
 const Menu = () => {
   return (
-    <div className="desktop-menu">
+    <div className={styles['desktop-menu']}>
       <ul>
         <li>
-          <a href="/" className="title">
+          <a href="/">
             My orders
           </a>
         </li>

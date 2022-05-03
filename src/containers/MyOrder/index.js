@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { AppContext } from "../../context/AppContext";
 
-import "./MyOrder.scss";
+import styles from "./MyOrder.module.scss";
 import arrow from "../../assets/icons/flechita.svg";
 
 import { Order } from "../../components/Order";
@@ -18,24 +18,24 @@ const MyOrder = () => {
   }
   return (
     <>
-      <aside className="MyOrder">
-        <div className="title-container">
+      <aside className={styles.MyOrder}>
+        <div className={styles['title-container']}>
           <img src={arrow} alt="arrow" />
-          <p className="title">My Order</p>
+          <p className={styles.title}>My Order</p>
         </div>
-        <div className="my-order-content">
+        <div className={styles['my-order-content']}>
           {state.cart.map((product) => {
             return (
               <OrderItem product={product} key={`orderItem-${product.id}` } />
             );
           })}
-          <div className="order">
+          <div className={styles.order}>
             <p>
               <span>Total</span>
             </p>
             <p>${sumTotal()}</p>
           </div>
-          <button className="primary-button">Checkout</button>
+          <button className={styles['primary-button']}>Checkout</button>
         </div>
       </aside>
     </>

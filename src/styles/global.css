@@ -18,3 +18,14 @@ body {
   /* background: $base-color;
   color: $color; */
 }
+
+a[href],
+input[type="submit"],
+input[type="image"],
+label[for],
+select,
+button,
+li,
+.pointer {
+  cursor: pointer;
+}
