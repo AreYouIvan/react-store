@@ -1,4 +1,4 @@
-@use '../../styles/vars';
+@use '../../_vars.scss';
 .order {
   display: grid;
   grid-template-columns: auto 1fr auto;

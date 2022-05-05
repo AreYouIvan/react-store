@@ -1,24 +1,33 @@
 import React from "react";
-import "./RecoveryPassword.scss";
-
+import styles from "./RecoveryPassword.scss";
+import Image from "next/image";
+import Link from "next/link";
 const RecoveryPassword = () => {
   return (
     <>
-      <div className="login">
-        <div className="form-container">
-          <img src="./logos/logo_yard_sale.svg" alt="logo" className="logo" />
-          <h1 className="title">Email has been sent!</h1>
-          <p className="subtitle">
+      <div className={styles.login}>
+        <div className={styles["form-container"]}>
+          <Image
+            src="./logos/logo_yard_sale.svg"
+            alt="logo"
+            className={styles.logo}
+          />
+          <h1 className={styles.title}>Email has been sent!</h1>
+          <p className={styles.subtitle}>
             Please check your inbox for instructions on how to reset the
             password
           </p>
-          <div className="email-image">
-            <img src="./icons/email.svg" alt="email" />
+          <div className={styles["email-image"]}>
+            <Image src="./icons/email.svg" alt="email" />
           </div>
-          <button className="primary-button login-button">Login</button>
+          <button
+            className={`${styles["primary-button"]} ${styles["login-button"]}`}
+          >
+            Login
+          </button>
           <p className="resend">
-            <span>Didn't receive the email?</span>
-            <a href="/">Resend</a>
+            <span>Didn&apos;t receive the email?</span>
+            <Link href="/">Resend</Link>
           </p>
         </div>
       </div>

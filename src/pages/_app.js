@@ -1,7 +1,5 @@
-import "../styles/globals.css";
 import "../styles/global.css";
-import "../styles/_vars.scss";
-import "../styles/Home.module.css";
+import { Header } from "../components/Header";
 import { AppContext } from "../context/AppContext";
 import { useInitialState } from "../hooks/useInitialState";
 function MyApp({ Component, pageProps }) {
@@ -9,6 +7,7 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <AppContext.Provider value={initalState}>
+      <Header />
       <Component {...pageProps} />
     </AppContext.Provider>
   );
